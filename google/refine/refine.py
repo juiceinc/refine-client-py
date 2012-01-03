@@ -174,7 +174,11 @@ class Refine:
             'ignore-quotes': s(ignore_quotes),
         }
         if project_url is not None:
-            options['url'] = project_url
+            options['project-url'] = project_url
+            options['project-file'] = {
+                'fd': StringIO.StringIO(),
+                'filename', ''
+            }
         elif project_file is not None:
             options['project-file'] = {
                 'fd': open(project_file),
