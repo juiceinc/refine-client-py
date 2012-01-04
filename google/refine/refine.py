@@ -177,7 +177,7 @@ class Refine:
             options['project-url'] = project_url
             options['project-file'] = {
                 'fd': StringIO.StringIO(),
-                'filename', ''
+                'filename': ''
             }
         elif project_file is not None:
             options['project-file'] = {
